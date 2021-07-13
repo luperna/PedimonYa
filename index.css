@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Lato";
+    src: url( "/fonts/Lato-Regular.ttf");
+    
+}
+
+
+* {margin: 0%;
+    padding: 0%}
+* {box-sizing: border-box}
+
+*{font-family: 'Lato';}
+
+.header { width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-color:#f7de82;
+}
+
+
+.navbar { 
+    width: 100%;   
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    }
+
+.ulnav {
+    width: 20%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+    object-fit: none;   
+}
+
+.linav {
+    color: #0c4ea2;
+    font-weight:700;
+    font-family: 'Lato';
+    font-size: 1rem;
+}
+
+.linav a {text-decoration: none;
+    color: inherit
+
+}
+
+.carrito {
+    margin-left: 1.5rem;
+}
+
+.contenedor-header {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textpresentation{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+
+ }
+
+.contenedor-pika {
+    width: 80%;
+    margin-right: 100px;
+
+}
+
+.imgpikachu {
+    width: 85%;
+    margin-left: 50px;
+   
+}
+
+.textpresentation h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 300px;
+    
+}
+
+.btn-atrapar {
+    height: 50px;
+    color: #ffffff;
+    background-color: #0c4ea2;
+    font-weight:700;
+    font-family: 'Lato';
+    font-size: 1.3rem;
+    border-radius: 15px;
+    border-style: none;
+    padding: 15px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-left: 300px;
+    
+    
+
+
+}
+
+.imglogopokebola {
+    margin-left: 300px;
+}
