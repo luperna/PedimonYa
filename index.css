@@ -1,117 +1,237 @@
 @font-face {
-    font-family: "Lato";
-    src: url( "/fonts/Lato-Regular.ttf");
-    
+    font-family: Lato;
+    src: url("/fonts/Lato-Bold.ttf");
 }
 
+@font-face {
+    font-family: Lato-Regular;
+    src: url("/fonts/Lato-Regular.ttf");
+}
 
-* {margin: 0%;
-    padding: 0%}
-* {box-sizing: border-box}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
 
-*{font-family: 'Lato';}
-
-.header { width: 100%;
+.header {
+    background-color: #f7de82;
+    width: 100%;
     height: 100vh;
-    align-items: center;
-    background-color:#f7de82;
 }
 
-
-.navbar { 
-    width: 100%;   
+.navbar {
+    width: 100%;
     height: 15vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    }
+}
 
-.ulnav {
-    width: 20%;
+.ul-nav {
     height: 100%;
+    width: 20%;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-
+    justify-content: space-between;
 }
 
-.logo {
+.logo-nav {
     width: 20%;
     height: auto;
-    object-fit: none;   
+    object-fit: none;
 }
 
-.linav {
+.li-nav {
     color: #0c4ea2;
-    font-weight:700;
-    font-family: 'Lato';
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.3em;
 }
 
-.linav a {text-decoration: none;
-    color: inherit
-
+.li-nav a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.carrito {
-    margin-left: 1.5rem;
+.li-nav a:hover{
+    color: black;
+    border-bottom: 5px solid #0c4ea2;
 }
 
-.contenedor-header {
-    height: 60vh;
+.carrito{
+    margin-left: 20px;
+}
+.carrito:hover{
+    color:black;
+    cursor: pointer;
+}
+.contenedor-header{
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.textpresentation{
-    width: 90%;
+.info-pedimonya{
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
-
- }
-
-.contenedor-pika {
-    width: 80%;
-    margin-right: 100px;
-
 }
 
-.imgpikachu {
-    width: 85%;
-    margin-left: 50px;
-   
+.contendor-pikachu-img{
+    margin-left: 10%;
+    width: 20%;
 }
 
-.textpresentation h3 {
-    font-size: 1.6rem;
+.pikachu-img {
+    width: 100%;
+}
+
+
+.info-pedimonya h3 {
     font-weight: 400;
-    margin-left: 300px;
-    
+    font-size: 2.2rem;
+    font-family: 'Lato-Regular';
 }
 
-.btn-atrapar {
+.btn-atrapar{
     height: 50px;
-    color: #ffffff;
     background-color: #0c4ea2;
-    font-weight:700;
-    font-family: 'Lato';
-    font-size: 1.3rem;
-    border-radius: 15px;
-    border-style: none;
-    padding: 15px;
-    letter-spacing: 2px;
-    margin-top: 40px;
-    margin-left: 300px;
-    
-    
-
-
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 3px;
 }
 
-.imglogopokebola {
-    margin-left: 300px;
+.btn-atrapar:hover{
+    background-color: black;
+    color:#f7de82;
+    cursor: pointer;
+}
+.about{
+    background-color: #0c4ea2;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-about{
+    color: #f7de82;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.p-about{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.container-caracteristicas{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.container-caracteristica{
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-caracteristica img {
+    width: 45%;
+}
+
+.container-caracteristica p {
+    font-family: 'Lato-Regular';
+    margin-top: 50px;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+    .ul-nav{
+        width: 40%;
+    }
+    .logo-nav{
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 700px) and (max-width: 1199px) {
+    .logo-nav{
+        width: 40%;
+    }
+    .ul-nav{
+        width: 70%;
+        justify-content: space-around;
+    }
+
+    .info-pedimonya{
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    .info-pedimonya h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px 0px;
+    }
+    .btn-atrapar {
+        margin-top: 50px;
+    }
+    .contendor-pikachu-img {
+        display: none;
+    }
+
+    .title-about{
+        margin-top: 30px;
+        font-size: 3rem;
+    }
+
+    .p-about{
+        font-size: 1.3rem;
+    }
+    .about{
+        height: 100vh;
+    }
+    .container-caracteristicas{
+        margin:0;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .container-caracteristica{
+        justify-content: space-around;
+        margin-top: 10%;
+        flex-direction: row;
+        width: 100%;
+    }
+    .container-caracteristica img {
+        width: 10%;
+    }
+    .container-caracteristica p {
+        margin: 0px;
+        width: 60%;
+    }
 }
