@@ -2,10 +2,24 @@
     font-family: Lato;
     src: url("/fonts/Lato-Bold.ttf");
 }
+@font-face {
+    font-family: Lato-black;
+    src: url("/fonts/Lato-Black.ttf");
+}
 
 @font-face {
     font-family: Lato-Regular;
     src: url("/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lato-thing;
+    src: url("/fonts/Lato-Thin.ttf");
+}
+
+@font-face {
+    font-family: Lato-light;
+    src: url("/fonts/Lato-Light.ttf");
 }
 
 * {
@@ -56,8 +70,9 @@
 }
 
 .li-nav a:hover{
-    color: black;
-    border-bottom: 5px solid #0c4ea2;
+    color: rgb(225, 115, 92);
+    border-bottom: 1px solid rgb(226, 77, 77);
+
 }
 
 .carrito{
@@ -92,7 +107,6 @@
     width: 100%;
 }
 
-
 .info-pedimonya h3 {
     font-weight: 400;
     font-size: 2.2rem;
@@ -103,16 +117,20 @@
     height: 50px;
     background-color: #0c4ea2;
     border-radius: 10px;
+    border-width: 0px;
     color: white;
     font-size: 1.3em;
     text-transform: uppercase;
     padding: 10px;
     letter-spacing: 3px;
+    margin-top: 20px;
 }
 
 .btn-atrapar:hover{
-    background-color: black;
-    color:#f7de82;
+    background-color: white;
+    color:#0c4ea2;
+    cursor: pointer;
+    border-color: #0c4ea2;
     cursor: pointer;
 }
 .about{
@@ -168,6 +186,188 @@
 }
 
 
+.list-pedis {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.title-list-pedis {
+    color: #0c4ea2;
+    font-size: 3rem;
+    font-family: Lato-light;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-width: 300px;
+
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    flex-wrap: wrap;
+ 
+}
+
+.card-1 {
+    width: 25%;
+    height: 400px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+    box-shadow: box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    min-width: 300px;
+    
+    
+}
+
+.card-img {
+    width:55%;
+    margin-top: 10%;
+}
+
+.nombre-pokemon {
+    font-family: Lato-Regular;
+    color:  #0c4ea2;
+    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-bottom: 5%;  
+}
+
+.price-pokemon {
+
+    font-family: Lato-black;
+    color:  #0c4ea2;
+    font-size: 2.5rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.btn-comprar {
+    width: 60%;
+    height: 50px;
+    background-color: #f7de82;
+    border-radius: 10px;
+    border-width: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    transition: all 150ms ease-in;
+
+}
+
+  
+    
+    .card-2 {
+        width: 25%;
+        height: 400px;
+        border-radius: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1%;
+        box-shadow: box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+        -webkit-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+        -moz-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+        min-width: 300px;
+    }
+
+    .card-3 {
+    width: 25%;
+    height: 400px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+    box-shadow: box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    min-width: 300px;
+}
+
+    .card-4 {
+        width: 25%;
+        height: 400px;
+        border-radius: 5%;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1%;
+        box-shadow: box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+        -webkit-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+        -moz-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+        min-width: 300px;
+    }
+
+    .card-5 {
+    width: 25%;
+    height: 400px;
+    border-radius: 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+    box-shadow: box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    min-width: 300px;
+}
+
+    .card-6 {
+    width: 25%;
+    height: 400px;
+    border-radius: 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+    box-shadow: box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 9px 10px 7px -2px rgba(0,0,0,0.15);
+    min-width: 300px;
+}
+
+
+    .btn-comprar:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1200px) and (max-width: 1700px) {
     .ul-nav{
         width: 40%;
@@ -175,6 +375,7 @@
     .logo-nav{
         width: 30%;
     }
+
 }
 
 
